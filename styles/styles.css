@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 4% 6%;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+main {
+  margin: 56px 100px;
+}
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  width: 439px;
+  height: 87px;
+}
+
+h4 {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+footer {
+  margin-top: 170px;
+  margin-bottom: -50px;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-align: center;
+}
+
+#crew-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 66px 30px;
+}
+
+.crew {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.not-aling {
+  position: relative;
+  top: 140px;
+}
+
+.crew div img {
+  width: 238px;
+  height: auto;
+}
+
+@media screen and (max-width: 1220px) {
+
+  body {
+    margin: 4% 5% 1% 5%;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  main {
+    margin: 36px 10px ;
+  }
+
+  footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+
+  #crew-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px 0px;
+  }  
+
+  .not-aling {
+    position: relative;
+    top: 70px;
+  }
+
+  .crew img {
+    width: 138px;
+    height: auto;
+  }
+}
